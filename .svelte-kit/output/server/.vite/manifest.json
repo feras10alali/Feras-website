@@ -1,0 +1,189 @@
+{
+  ".svelte-kit/generated/server/internal.js": {
+    "file": "internal.js",
+    "name": "internal",
+    "src": ".svelte-kit/generated/server/internal.js",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js",
+      "_environment.js"
+    ],
+    "dynamicImports": [
+      "src/hooks.server.ts"
+    ]
+  },
+  "_SignIn.js": {
+    "file": "chunks/SignIn.js",
+    "name": "SignIn",
+    "imports": [
+      "_ssr.js",
+      "_stores.js"
+    ]
+  },
+  "_auth.js": {
+    "file": "chunks/auth.js",
+    "name": "auth",
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "_environment.js": {
+    "file": "chunks/environment.js",
+    "name": "environment"
+  },
+  "_exports.js": {
+    "file": "chunks/exports.js",
+    "name": "exports"
+  },
+  "_index.js": {
+    "file": "chunks/index.js",
+    "name": "index"
+  },
+  "_index2.js": {
+    "file": "chunks/index2.js",
+    "name": "index",
+    "imports": [
+      "_environment.js",
+      "_prod-ssr.js",
+      "_index.js"
+    ]
+  },
+  "_prod-ssr.js": {
+    "file": "chunks/prod-ssr.js",
+    "name": "prod-ssr"
+  },
+  "_ssr.js": {
+    "file": "chunks/ssr.js",
+    "name": "ssr"
+  },
+  "_stores.js": {
+    "file": "chunks/stores.js",
+    "name": "stores",
+    "imports": [
+      "_ssr.js",
+      "_exports.js"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
+    "file": "entries/fallbacks/error.svelte.js",
+    "name": "entries/fallbacks/error.svelte",
+    "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js",
+      "_stores.js"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/components/layout.svelte": {
+    "file": "entries/fallbacks/layout.svelte.js",
+    "name": "entries/fallbacks/layout.svelte",
+    "src": "node_modules/@sveltejs/kit/src/runtime/components/layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/server/index.js": {
+    "file": "index.js",
+    "name": "index",
+    "src": "node_modules/@sveltejs/kit/src/runtime/server/index.js",
+    "isEntry": true,
+    "imports": [
+      "_prod-ssr.js",
+      "_environment.js",
+      "_index.js",
+      "_exports.js",
+      "_ssr.js",
+      ".svelte-kit/generated/server/internal.js"
+    ]
+  },
+  "src/hooks.server.ts": {
+    "file": "chunks/hooks.server.js",
+    "name": "hooks.server",
+    "src": "src/hooks.server.ts",
+    "isDynamicEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/lib/assets/Blogo.png": {
+    "file": "_app/immutable/assets/Blogo.CDZ2cX-h.png",
+    "src": "src/lib/assets/Blogo.png"
+  },
+  "src/lib/assets/noPicture.jpeg": {
+    "file": "_app/immutable/assets/noPicture.DcvZmqcn.jpeg",
+    "src": "src/lib/assets/noPicture.jpeg"
+  },
+  "src/lib/assets/oldTV.mp4": {
+    "file": "_app/immutable/assets/oldTV.BqrICE9k.mp4",
+    "src": "src/lib/assets/oldTV.mp4"
+  },
+  "src/routes/+layout.server.ts": {
+    "file": "entries/pages/_layout.server.ts.js",
+    "name": "entries/pages/_layout.server.ts",
+    "src": "src/routes/+layout.server.ts",
+    "isEntry": true
+  },
+  "src/routes/+page.svelte": {
+    "file": "entries/pages/_page.svelte.js",
+    "name": "entries/pages/_page.svelte",
+    "src": "src/routes/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js",
+      "_SignIn.js",
+      "_stores.js"
+    ]
+  },
+  "src/routes/Home/+page.svelte": {
+    "file": "entries/pages/Home/_page.svelte.js",
+    "name": "entries/pages/Home/_page.svelte",
+    "src": "src/routes/Home/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.DfTVkcZh.css"
+    ],
+    "assets": [
+      "_app/immutable/assets/Blogo.CDZ2cX-h.png",
+      "_app/immutable/assets/oldTV.BqrICE9k.mp4",
+      "_app/immutable/assets/noPicture.DcvZmqcn.jpeg"
+    ]
+  },
+  "src/routes/signin/+page.server.ts": {
+    "file": "entries/pages/signin/_page.server.ts.js",
+    "name": "entries/pages/signin/_page.server.ts",
+    "src": "src/routes/signin/+page.server.ts",
+    "isEntry": true,
+    "imports": [
+      "_auth.js"
+    ]
+  },
+  "src/routes/signin/+page.svelte": {
+    "file": "entries/pages/signin/_page.svelte.js",
+    "name": "entries/pages/signin/_page.svelte",
+    "src": "src/routes/signin/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js",
+      "_SignIn.js",
+      "_stores.js",
+      "_index.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.BYozVV1h.css"
+    ]
+  },
+  "src/routes/signout/+page.server.ts": {
+    "file": "entries/pages/signout/_page.server.ts.js",
+    "name": "entries/pages/signout/_page.server.ts",
+    "src": "src/routes/signout/+page.server.ts",
+    "isEntry": true,
+    "imports": [
+      "_auth.js"
+    ]
+  }
+}
