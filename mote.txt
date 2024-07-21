@@ -1,0 +1,91 @@
+import { AUTH_GITHUB_ID, AUTH_GITHUB_SECRET, GOOGLE_ID, GOOGLE_SECRET, AUTH_SECRET} from "$env/static/private"
+import { SvelteKitAuth } from "@auth/sveltekit"
+import GitHub from "@auth/sveltekit/providers/github"
+import Google from "@auth/sveltekit/providers/google"
+ 
+export const { handle, signIn, signOut } = SvelteKitAuth(async (event) => {
+  const authOptions = {
+    providers: [
+      GitHub({ clientId: AUTH_GITHUB_ID, clientSecret: AUTH_GITHUB_SECRET }),
+      Google({ clientId: GOOGLE_ID, clientSecret: GOOGLE_SECRET })
+    ],
+    secret: AUTH_SECRET,
+    trustHost: true
+  }
+}) 
+SignIn provider="twitter" signInPage="signin"/>
+SignIn provider="twitter" signInPage="signin"/>
+    import { browser } from '$app/environment';
+     ...Your other imports
+        SignIn provider="twitter" signInPage="signin"/>
+    if (browser) { 
+        window.location.href = '/Home';
+    }
+
+
+
+    //    adapter: FirestoreAdapter({
+//      credential: cert({
+//        projectId: process.env.AUTH_FIREBASE_PROJECT_ID,
+//        clientEmail: process.env.AUTH_FIREBASE_CLIENT_EMAIL,
+//        privateKey: process.env.AUTH_FIREBASE_PRIVATE_KEY,
+//      }),
+//    }),
+
+
+
+
+
+
+
+
+
+
+<script>
+    import { SignIn } from "@auth/sveltekit/components"
+    import { page } from "$app/stores"
+    import { redirect } from '@sveltejs/kit';   
+    import { signIn } from "@auth/sveltekit/client";
+    import { onMount } from 'svelte';
+    import { goto } from '$app/navigation';
+
+
+
+    onMount(() => {
+        if ($page.data.session) {
+          goto ('/Home');
+        }
+    });
+</script>
+
+    {#if $page.data.session}
+        <p></p>
+    {:else}
+        <div id="main">
+            <input type="email">
+            <input type="password">
+            <SignIn provider="google" signInPage="signin" id="Google"/>
+            <div id="Github"><SignIn provider="github" signInPage="signin"/></div>
+            <div id="X"><SignIn provider="twitter" signInPage="signin"/></div>
+        </div>
+    {/if}
+
+<style>
+    #main{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        display: grid;
+        grid-column: 4;
+    }
+
+    #Google{
+        height: 500px;
+    }
+
+    
+
+
+
+</style>
+  
